@@ -1,0 +1,178 @@
+.attraction {
+  width: 100%;
+  padding: 0 10px;
+  .attraction-wrapper {
+    width: 100%;
+    margin-bottom: 40px;
+    .attraction__body {
+      max-width: 1200px;
+      margin: 0 auto;
+
+      padding: 20px;
+      border: 1px solid rgb(214, 214, 214);
+      border-radius: 100px;
+      box-shadow: 4px 4px 38px 0px rgba(34, 60, 80, 0.2);
+
+      display: flex;
+      justify-content: space-between;
+
+      .attraction__info {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        gap: 20px;
+        max-width: 350px;
+        padding: 20px;
+        .attraction__title {
+          font-family: "Georgia";
+          font-size: 20px;
+          line-height: 130%;
+          letter-spacing: 0.06em;
+        }
+        .attraction__text {
+          font-family: "Arial";
+          max-width: 100%;
+          line-height: 160%;
+          color: #4C4C4C;
+        }
+        .attraction__list {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 10px;
+          .attraction__item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            border: 1px solid gray;
+            border-radius: 100px;
+            padding: 10px 15px;
+            
+            .attraction-city {
+              font-family: "Georgia";
+              font-size: 1.5vw;
+              line-height: 130%;
+              letter-spacing: 0.06em;
+            }
+            .attraction-weather {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-family: "Arial";
+              max-width: 100%;
+              line-height: 160%;
+              color: #4C4C4C;
+            }
+          }
+        }
+      }
+      .attraction__imgs {
+        position: relative;
+        max-width: 700px;
+        overflow: hidden;
+        border-radius: 100px;
+        .attraction__img {
+          max-width: 100%;
+          border-radius: 100px;
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 768px) {
+  .attraction {
+    .attraction-wrapper {
+      .attraction__body {
+        .attraction__info {
+          .attraction__title {
+          }
+          .attraction__text {
+          }
+          .attraction__list {
+            .attraction__item { 
+              .attraction-city {
+              }
+              .attraction-weather {
+              }
+            }
+          }
+        }
+        .attraction__imgs {
+          max-width: 40%;
+          .attraction__img {
+            max-width: 500px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .attraction {
+    .attraction-wrapper {
+      .attraction__body {
+        flex-direction: column;
+        .attraction__info {
+          max-width: 100%;
+          .attraction__title {
+          }
+          .attraction__text {
+          }
+          .attraction__list {
+            .attraction__item { 
+              .attraction-city {
+              }
+              .attraction-weather {
+              }
+            }
+          }
+        }
+        .attraction__imgs {
+          max-width: 100%;
+          .attraction__img {
+            max-width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .attraction {
+    .attraction-wrapper {
+      margin-bottom: 20px;
+      .attraction__body {
+        flex-direction: column;
+        .attraction__info {
+          max-width: 100%;
+          gap: 10px;
+          .attraction__title {
+            font-size: 18px;
+          }
+          .attraction__text {
+            font-size: 12px;
+          }
+          .attraction__list {
+            .attraction__item { 
+              gap: 5px;
+              .attraction-city {
+              }
+              .attraction-weather {
+              }
+            }
+          }
+        }
+        .attraction__imgs {
+          max-width: 100%;
+          .attraction__img {
+            max-width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
