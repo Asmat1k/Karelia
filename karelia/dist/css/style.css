@@ -496,7 +496,7 @@ html {
 }
 
 .about-wrapper .about .about__column .img-wrapper .about__info .about__title {
-  font-size: 2vw;
+  font-size: 20px;
   font-weight: 700;
   margin: 0;
 }
@@ -662,7 +662,7 @@ html {
 }
 
 .river-wrapper .river .river__column .img-wrapper .river__info .river__title {
-  font-size: 2vw;
+  font-size: 20px;
   font-weight: 700;
   margin: 0;
 }
@@ -765,7 +765,7 @@ html {
 }
 
 .forest-wrapper .forest .forest__column .img-wrapper .forest__info .forest__title {
-  font-size: 2vw;
+  font-size: 20px;
   font-weight: 700;
   margin: 0;
 }
@@ -1511,6 +1511,10 @@ html {
     max-width: 90%;
   }
 
+  .about-wrapper .about .about__column .about__info .about__title {
+    font-size: 25px;
+  }
+
   .about-wrapper .about .about__info {
     min-width: 90%;
     row-gap: 20px;
@@ -1710,7 +1714,7 @@ html {
 
   .about-wrapper .about .about__column .img-wrapper .about__info .about__title {
     text-align: left;
-    font-size: 20px;
+    font-size: 25px;
   }
 
   .about-wrapper .about .about__info {
