@@ -102,9 +102,4 @@
     menuInit();
     initSwiper();
     initVisible(".header");
-    window.onunload = function() {
-        console.log("about to clear event listeners prior to leaving page");
-        window.removeEventListener("scroll", Visible(".header"));
-        return;
-    };
 })();
