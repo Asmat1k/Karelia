@@ -980,6 +980,57 @@ html {
   color: white;
 }
 
+.map {
+  width: 100%;
+}
+
+.map .map-wrapper .map__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 1200px;
+  gap: 20px;
+  margin: 0 auto;
+}
+
+.map .map-wrapper .map__body .map__iframe {
+  border-radius: 60px;
+  overflow: hidden;
+  max-width: 65%;
+}
+
+.map .map-wrapper .map__body .map__iframe iframe {
+  max-width: 100%;
+}
+
+.map .map-wrapper .map__body .map__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  max-width: 30%;
+}
+
+.map .map-wrapper .map__body .map__info .map__title {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+
+.map .map-wrapper .map__body .map__info .map__text {
+  font-size: 14px;
+}
+
 [class*=-ibg] {
   position: relative;
 }
@@ -1072,6 +1123,31 @@ html {
   .forest-wrapper .forest .forest__info .forest__text {
     gap: 10px;
     font-size: 15px;
+  }
+}
+
+@media (max-width: 800px) {
+  .map {
+    padding: 0 20px;
+  }
+
+  .map .map-wrapper .map__body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .map .map-wrapper .map__body .map__iframe {
+    max-width: 100%;
+  }
+
+  .map .map-wrapper .map__body .map__info {
+    max-width: 100%;
+  }
+
+  .map .map-wrapper .map__body .map__info .map__title {
+    text-align: center;
   }
 }
 
@@ -1411,6 +1487,13 @@ html {
   }
 }
 
+@media (max-width: 440px) {
+  .footer .footer__container .footer__body .footer__info .footer__link {
+    font-size: 13px;
+    font-weight: 400;
+  }
+}
+
 @media (max-width: 400px) {
   .attraction .attraction-wrapper {
     margin-bottom: 20px;
@@ -1626,6 +1709,13 @@ html {
   .header .header-container {
     padding: 30px 0 0 0;
     max-width: 280px;
+  }
+}
+
+@media (max-width: 340px) {
+  .footer .footer__container .footer__body .footer__info .footer__link {
+    font-size: 12px;
+    font-weight: 400;
   }
 }
 

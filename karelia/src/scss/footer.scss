@@ -32,3 +32,33 @@
     }
   }
 }
+
+@media (max-width: 440px) {
+  .footer {
+    .footer__container {
+      .footer__body {
+        .footer__info {
+          .footer__link {
+            font-size: 13px;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 340px) {
+  .footer {
+    .footer__container {
+      .footer__body {
+        .footer__info {
+          .footer__link {
+            font-size: 12px;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+}
