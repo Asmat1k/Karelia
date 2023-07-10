@@ -1,7 +1,7 @@
 import '../scss/style.scss';
 import * as myFunctions from './files/functions.js';
 import * as menuFunctions from './files/burger.js';
-import { getWeather } from './functions/get-weather.js';
+import { getWeather, setWeather } from './functions/get-weather.js';
 import { initSwiper } from './functions/swiper.js';
 import { Visible, initVisible } from './functions/scroll.js';
 
@@ -14,4 +14,5 @@ menuFunctions.menuInit();
 initSwiper();
 initVisible('.header');
 
-// getWeather();
+// setWeather();
+getWeather();

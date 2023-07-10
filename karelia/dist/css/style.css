@@ -992,7 +992,7 @@ html {
           justify-content: center;
   max-width: 700px;
   overflow: hidden;
-  border-radius: 50px;
+  border-radius: 0px;
 }
 
 .attraction .attraction-wrapper .attraction__body .swiper .swiper-wrapper .swiper-slide .attraction__imgs .attraction__img {
