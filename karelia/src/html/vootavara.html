@@ -6,46 +6,69 @@
         <div class="attraction__text">
           Одна из наивысших точек Карелии, скальный массив, притягивающий путешественников потрясающим ландшафтом и таинственными каменными сооружениями, о которых до сих пор ходя легенды.
         </div>
-        <div class="attraction__list">
-          <div class="attraction__item">
-            <div class="attraction-city">
-              <i class="fa-solid fa-map-location-dot"></i>
+        <div class="attraction__cards">
+          <h2 class="attraction__text_bold">Информация:</h2>
+          <div class="attraction__list">
+            <div class="attraction__item">
+              <div class="attraction-city">
+                <i class="fa-solid fa-map-location-dot"></i>
+              </div>
+              <div class="attraction-weather">Воттаваара</div>
             </div>
-            <div class="attraction-weather">Воттаваара</div>
-          </div>
-          <div class="attraction__item">
-            <div class="attraction-city">
-              <i class="fa-solid fa-cloud"></i>
+            <div class="attraction__item">
+              <div class="attraction-city">
+                <i class="fa-solid fa-cloud"></i>
+              </div>
+              <div class="attraction-weather">+25</div>
             </div>
-            <div class="attraction-weather">+15</div>
-          </div>
-          <div class="attraction__item">
-            <div class="attraction-city">
-              <i class="fa-solid fa-clock"></i>
-            </div>
-            <div class="attraction-weather">1</div>
-          </div>
-          <div class="attraction__item">
-            <div class="attraction-city">
-              <i class="fa-solid fa-tree"></i>
+            <div class="attraction__item">
+              <div class="attraction-city">
+                <i class="fa-solid fa-clock"></i>
+              </div>
+              <div class="attraction-weather">2-3</div>
             </div>
           </div>
-          <div class="attraction__item">
-            <div class="attraction-city">
-              <i class="fa-solid fa-person-hiking"></i>
+        </div>
+        <div class="attraction__cards">
+          <h2 class="attraction__text_bold">Что там есть:</h2>
+          <div class="attraction__list">
+            <div class="attraction__item">
+              <div class="attraction-city">
+                <i class="fa-solid fa-person-hiking"></i>
+              </div>
+            </div>
+            <div class="attraction__item">
+              <div class="attraction-city">
+                <i class="fa-solid fa-tree"></i>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="attraction__imgs">
-        <img src="@img/vootavara.jpg" alt="рускеала" class="attraction__img">
-        <div class="arrow left">
-          <i class="fa-solid fa-arrow-right fa-2xl" style="color: #ffffff;"></i>
+      
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="attraction__imgs">
+              <img src="@img/vootavara.jpg" alt="рускеала-фото1" class="attraction__img">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="attraction__imgs">
+              <img src="@img/ruskeala-2.webp" alt="рускеала-фото2" class="attraction__img">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="attraction__imgs">
+              <img src="@img/ruskeala-3.jpg" alt="рускеала-фото3" class="attraction__img">
+            </div>
+          </div>
         </div>
-        <div class="arrow right">
-          <i class="fa-solid fa-arrow-right fa-2xl" style="color: #ffffff;"></i>
-        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
       </div>
+
     </div>
   </div>
 </section>

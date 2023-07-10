@@ -8,6 +8,10 @@
 	<link rel="icon" type="image/x-icon" href="favicon.ico">
 	<link rel="stylesheet" href="css/style.min.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
 	<script src="https://kit.fontawesome.com/429648afba.js" crossorigin="anonymous"></script>
 </head>
 
@@ -44,59 +48,82 @@
 						<div class="attraction__info">
 							<h2 class="attraction__title">Горный Парк Рускеала</h2>
 							<div class="attraction__text">
-								Туристический комплекс, расположенный в Сортавальском районе Республики Карелия.
+								<span class="attraction__text_bold">Что это:</span> Туристический комплекс, расположенный в Сортавальском районе Республики Карелия.
 								Основой комплекса является объект культурного наследия, памятник истории — заполненный грунтовыми водами бывший мраморный карьер.
 							</div>
-							<div class="attraction__list">
-								<div class="attraction__item">
-									<div class="attraction-city">
-										<i class="fa-solid fa-map-location-dot"></i>
+							<div class="attraction__cards">
+								<h2 class="attraction__text_bold">Информация:</h2>
+								<div class="attraction__list">
+									<div class="attraction__item">
+										<div class="attraction-city">
+											<i class="fa-solid fa-map-location-dot"></i>
+										</div>
+										<div class="attraction-weather">Рускеала</div>
 									</div>
-									<div class="attraction-weather">Рускеала</div>
-								</div>
-								<div class="attraction__item">
-									<div class="attraction-city">
-										<i class="fa-solid fa-cloud"></i>
+									<div class="attraction__item">
+										<div class="attraction-city">
+											<i class="fa-solid fa-cloud"></i>
+										</div>
+										<div class="attraction-weather">+25</div>
 									</div>
-									<div class="attraction-weather">+25</div>
-								</div>
-								<div class="attraction__item">
-									<div class="attraction-city">
-										<i class="fa-solid fa-clock"></i>
-									</div>
-									<div class="attraction-weather">2-3</div>
-								</div>
-								<div class="attraction__item">
-									<div class="attraction-city">
-										<i class="fa-solid fa-utensils"></i>
+									<div class="attraction__item">
+										<div class="attraction-city">
+											<i class="fa-solid fa-clock"></i>
+										</div>
+										<div class="attraction-weather">2-3</div>
 									</div>
 								</div>
-								<div class="attraction__item">
-									<div class="attraction-city">
-										<i class="fa-sharp fa-solid fa-restroom"></i>
+							</div>
+							<div class="attraction__cards">
+								<h2 class="attraction__text_bold">Что там есть:</h2>
+								<div class="attraction__list">
+									<div class="attraction__item">
+										<div class="attraction-city">
+											<i class="fa-solid fa-utensils"></i>
+										</div>
 									</div>
-								</div>
-								<div class="attraction__item">
-									<div class="attraction-city">
-										<i class="fa-solid fa-tree"></i>
+									<div class="attraction__item">
+										<div class="attraction-city">
+											<i class="fa-sharp fa-solid fa-restroom"></i>
+										</div>
 									</div>
-								</div>
-								<div class="attraction__item">
-									<div class="attraction-city">
-										<i class="fa-solid fa-water"></i>
+									<div class="attraction__item">
+										<div class="attraction-city">
+											<i class="fa-solid fa-tree"></i>
+										</div>
+									</div>
+									<div class="attraction__item">
+										<div class="attraction-city">
+											<i class="fa-solid fa-water"></i>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="attraction__imgs">
-							<picture><source srcset="img/ruskeala.webp" type="image/webp"><img src="img/ruskeala.jpg" alt="рускеала" class="attraction__img"></picture>
-							<div class="arrow left">
-								<i class="fa-solid fa-arrow-right fa-2xl" style="color: #ffffff;"></i>
+
+						<div class="swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="attraction__imgs">
+										<picture><source srcset="img/ruskeala.webp" type="image/webp"><img src="img/ruskeala.jpg" alt="рускеала-фото1" class="attraction__img"></picture>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="attraction__imgs">
+										<picture><source srcset="img/ruskeala-2.webp" type="image/webp"><img src="img/ruskeala-2.webp" alt="рускеала-фото2" class="attraction__img"></picture>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="attraction__imgs">
+										<picture><source srcset="img/ruskeala-3.webp" type="image/webp"><img src="img/ruskeala-3.jpg" alt="рускеала-фото3" class="attraction__img"></picture>
+									</div>
+								</div>
 							</div>
-							<div class="arrow right">
-								<i class="fa-solid fa-arrow-right fa-2xl" style="color: #ffffff;"></i>
-							</div>
+							<div class="swiper-pagination"></div>
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
 						</div>
+
 					</div>
 				</div>
 			</section>
@@ -108,40 +135,66 @@
 							<div class="attraction__text">
 								Один из старейших российских заповедников. Он создан в 1931 году по инициативе карельских ученых в научных, опытно-хозяйственных и культурно-просветительных целях.
 							</div>
-							<div class="attraction__list">
-								<div class="attraction__item">
-									<div class="attraction-city">
-										<i class="fa-solid fa-map-location-dot"></i>
+							<div class="attraction__cards">
+								<h2 class="attraction__text_bold">Информация:</h2>
+								<div class="attraction__list">
+									<div class="attraction__item">
+										<div class="attraction-city">
+											<i class="fa-solid fa-map-location-dot"></i>
+										</div>
+										<div class="attraction-weather">Кивач</div>
 									</div>
-									<div class="attraction-weather">Кивач</div>
-								</div>
-								<div class="attraction__item">
-									<div class="attraction-city">
-										<i class="fa-solid fa-cloud"></i>
+									<div class="attraction__item">
+										<div class="attraction-city">
+											<i class="fa-solid fa-cloud"></i>
+										</div>
+										<div class="attraction-weather">+25</div>
 									</div>
-									<div class="attraction-weather">+25</div>
-								</div>
-								<div class="attraction__item">
-									<div class="attraction-city">
-										<i class="fa-solid fa-clock"></i>
+									<div class="attraction__item">
+										<div class="attraction-city">
+											<i class="fa-solid fa-clock"></i>
+										</div>
+										<div class="attraction-weather">2-3</div>
 									</div>
-									<div class="attraction-weather">2-3</div>
 								</div>
-								<div class="attraction__item">
-									<div class="attraction-city">
-										<i class="fa-solid fa-utensils"></i>
+							</div>
+							<div class="attraction__cards">
+								<h2 class="attraction__text_bold">Что там есть:</h2>
+								<div class="attraction__list">
+									<div class="attraction__item">
+										<div class="attraction-city">
+											<i class="fa-solid fa-tree"></i>
+										</div>
+									</div>
+									<div class="attraction__item">
+										<div class="attraction-city">
+											<i class="fa-solid fa-water"></i>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="attraction__imgs">
-							<picture><source srcset="img/kivach.webp" type="image/webp"><img src="img/kivach.jpg" alt="рускеала" class="attraction__img"></picture>
-							<div class="arrow left">
-								<i class="fa-solid fa-arrow-right fa-2xl" style="color: #ffffff;"></i>
+						<div class="swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="attraction__imgs">
+										<picture><source srcset="img/kivach.webp" type="image/webp"><img src="img/kivach.jpg" alt="рускеала-фото1" class="attraction__img"></picture>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="attraction__imgs">
+										<picture><source srcset="img/ruskeala-2.webp" type="image/webp"><img src="img/ruskeala-2.webp" alt="рускеала-фото2" class="attraction__img"></picture>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="attraction__imgs">
+										<picture><source srcset="img/ruskeala-3.webp" type="image/webp"><img src="img/ruskeala-3.jpg" alt="рускеала-фото3" class="attraction__img"></picture>
+									</div>
+								</div>
 							</div>
-							<div class="arrow right">
-								<i class="fa-solid fa-arrow-right fa-2xl" style="color: #ffffff;"></i>
-							</div>
+							<div class="swiper-pagination"></div>
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
 						</div>
 					</div>
 				</div>
@@ -155,51 +208,79 @@
 								Остров в Онежском озере, в 68 км от столицы Карелии — Петрозаводска. На острове расположен музей традиционной крестьянской культуры Русского Севера,
 								один из крупнейших и известнейших в России музеев-заповедников под открытым небом.
 							</div>
-							<div class="attraction__list">
-								<div class="attraction__item">
-									<div class="attraction-city">
-										<i class="fa-solid fa-map-location-dot"></i>
+							<div class="attraction__cards">
+								<h2 class="attraction__text_bold">Информация:</h2>
+								<div class="attraction__list">
+									<div class="attraction__item">
+										<div class="attraction-city">
+											<i class="fa-solid fa-map-location-dot"></i>
+										</div>
+										<div class="attraction-weather">Кижи</div>
 									</div>
-									<div class="attraction-weather">Кивач</div>
-								</div>
-								<div class="attraction__item">
-									<div class="attraction-city">
-										<i class="fa-solid fa-cloud"></i>
+									<div class="attraction__item">
+										<div class="attraction-city">
+											<i class="fa-solid fa-cloud"></i>
+										</div>
+										<div class="attraction-weather">+25</div>
 									</div>
-									<div class="attraction-weather">+25</div>
-								</div>
-								<div class="attraction__item">
-									<div class="attraction-city">
-										<i class="fa-solid fa-clock"></i>
-									</div>
-									<div class="attraction-weather">1-2</div>
-								</div>
-								<div class="attraction__item">
-									<div class="attraction-city">
-										<i class="fa-solid fa-tree"></i>
+									<div class="attraction__item">
+										<div class="attraction-city">
+											<i class="fa-solid fa-clock"></i>
+										</div>
+										<div class="attraction-weather">2-3</div>
 									</div>
 								</div>
-								<div class="attraction__item">
-									<div class="attraction-city">
-										<i class="fa-solid fa-water"></i>
+							</div>
+							<div class="attraction__cards">
+								<h2 class="attraction__text_bold">Что там есть:</h2>
+								<div class="attraction__list">
+									<div class="attraction__item">
+										<div class="attraction-city">
+											<i class="fa-solid fa-utensils"></i>
+										</div>
 									</div>
-								</div>
-								<div class="attraction__item">
-									<div class="attraction-city">
-										<i class="fa-sharp fa-solid fa-restroom"></i>
+									<div class="attraction__item">
+										<div class="attraction-city">
+											<i class="fa-sharp fa-solid fa-restroom"></i>
+										</div>
+									</div>
+									<div class="attraction__item">
+										<div class="attraction-city">
+											<i class="fa-solid fa-church"></i>
+										</div>
+									</div>
+									<div class="attraction__item">
+										<div class="attraction-city">
+											<i class="fa-solid fa-water"></i>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="attraction__imgs">
-							<picture><source srcset="img/kizhi.webp" type="image/webp"><img src="img/kizhi.jpg" alt="кижи фото" class="attraction__img"></picture>
-							<div class="arrow left">
-								<i class="fa-solid fa-arrow-right fa-2xl" style="color: #ffffff;"></i>
+
+						<div class="swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="attraction__imgs">
+										<picture><source srcset="img/kizhi.webp" type="image/webp"><img src="img/kizhi.jpg" alt="рускеала-фото1" class="attraction__img"></picture>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="attraction__imgs">
+										<picture><source srcset="img/ruskeala-2.webp" type="image/webp"><img src="img/ruskeala-2.webp" alt="рускеала-фото2" class="attraction__img"></picture>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="attraction__imgs">
+										<picture><source srcset="img/ruskeala-3.webp" type="image/webp"><img src="img/ruskeala-3.jpg" alt="рускеала-фото3" class="attraction__img"></picture>
+									</div>
+								</div>
 							</div>
-							<div class="arrow right">
-								<i class="fa-solid fa-arrow-right fa-2xl" style="color: #ffffff;"></i>
-							</div>
+							<div class="swiper-pagination"></div>
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
 						</div>
+
 					</div>
 				</div>
 			</section>
@@ -211,46 +292,69 @@
 							<div class="attraction__text">
 								Одна из наивысших точек Карелии, скальный массив, притягивающий путешественников потрясающим ландшафтом и таинственными каменными сооружениями, о которых до сих пор ходя легенды.
 							</div>
-							<div class="attraction__list">
-								<div class="attraction__item">
-									<div class="attraction-city">
-										<i class="fa-solid fa-map-location-dot"></i>
+							<div class="attraction__cards">
+								<h2 class="attraction__text_bold">Информация:</h2>
+								<div class="attraction__list">
+									<div class="attraction__item">
+										<div class="attraction-city">
+											<i class="fa-solid fa-map-location-dot"></i>
+										</div>
+										<div class="attraction-weather">Воттаваара</div>
 									</div>
-									<div class="attraction-weather">Воттаваара</div>
-								</div>
-								<div class="attraction__item">
-									<div class="attraction-city">
-										<i class="fa-solid fa-cloud"></i>
+									<div class="attraction__item">
+										<div class="attraction-city">
+											<i class="fa-solid fa-cloud"></i>
+										</div>
+										<div class="attraction-weather">+25</div>
 									</div>
-									<div class="attraction-weather">+15</div>
-								</div>
-								<div class="attraction__item">
-									<div class="attraction-city">
-										<i class="fa-solid fa-clock"></i>
-									</div>
-									<div class="attraction-weather">1</div>
-								</div>
-								<div class="attraction__item">
-									<div class="attraction-city">
-										<i class="fa-solid fa-tree"></i>
+									<div class="attraction__item">
+										<div class="attraction-city">
+											<i class="fa-solid fa-clock"></i>
+										</div>
+										<div class="attraction-weather">2-3</div>
 									</div>
 								</div>
-								<div class="attraction__item">
-									<div class="attraction-city">
-										<i class="fa-solid fa-person-hiking"></i>
+							</div>
+							<div class="attraction__cards">
+								<h2 class="attraction__text_bold">Что там есть:</h2>
+								<div class="attraction__list">
+									<div class="attraction__item">
+										<div class="attraction-city">
+											<i class="fa-solid fa-person-hiking"></i>
+										</div>
+									</div>
+									<div class="attraction__item">
+										<div class="attraction-city">
+											<i class="fa-solid fa-tree"></i>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="attraction__imgs">
-							<picture><source srcset="img/vootavara.webp" type="image/webp"><img src="img/vootavara.jpg" alt="рускеала" class="attraction__img"></picture>
-							<div class="arrow left">
-								<i class="fa-solid fa-arrow-right fa-2xl" style="color: #ffffff;"></i>
+
+						<div class="swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="attraction__imgs">
+										<picture><source srcset="img/vootavara.webp" type="image/webp"><img src="img/vootavara.jpg" alt="рускеала-фото1" class="attraction__img"></picture>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="attraction__imgs">
+										<picture><source srcset="img/ruskeala-2.webp" type="image/webp"><img src="img/ruskeala-2.webp" alt="рускеала-фото2" class="attraction__img"></picture>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="attraction__imgs">
+										<picture><source srcset="img/ruskeala-3.webp" type="image/webp"><img src="img/ruskeala-3.jpg" alt="рускеала-фото3" class="attraction__img"></picture>
+									</div>
+								</div>
 							</div>
-							<div class="arrow right">
-								<i class="fa-solid fa-arrow-right fa-2xl" style="color: #ffffff;"></i>
-							</div>
+							<div class="swiper-pagination"></div>
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
 						</div>
+
 					</div>
 				</div>
 			</section>
@@ -263,46 +367,69 @@
 								Удивительное место в глубине леса с давней историей. Изначально оно носило название Юканкоски, что в переводе с финского обозначает «речной порог». На самом деле это не один, а целых два водопада, расположенных на расстоянии 30 метров друг от друга.
 								Название «Белые мосты» связано с мостами через реку Кулисмайоки, которые находились выше по течению и были построены финнами с использованием белого камня. До наших дней мосты не сохранились.
 							</div>
-							<div class="attraction__list">
-								<div class="attraction__item">
-									<div class="attraction-city">
-										<i class="fa-solid fa-map-location-dot"></i>
+							<div class="attraction__cards">
+								<h2 class="attraction__text_bold">Информация:</h2>
+								<div class="attraction__list">
+									<div class="attraction__item">
+										<div class="attraction-city">
+											<i class="fa-solid fa-map-location-dot"></i>
+										</div>
+										<div class="attraction-weather">Белые мосты</div>
 									</div>
-									<div class="attraction-weather">Белые мосты</div>
-								</div>
-								<div class="attraction__item">
-									<div class="attraction-city">
-										<i class="fa-solid fa-cloud"></i>
+									<div class="attraction__item">
+										<div class="attraction-city">
+											<i class="fa-solid fa-cloud"></i>
+										</div>
+										<div class="attraction-weather">+25</div>
 									</div>
-									<div class="attraction-weather">+15</div>
-								</div>
-								<div class="attraction__item">
-									<div class="attraction-city">
-										<i class="fa-solid fa-clock"></i>
-									</div>
-									<div class="attraction-weather">1-2</div>
-								</div>
-								<div class="attraction__item">
-									<div class="attraction-city">
-										<i class="fa-solid fa-tree"></i>
+									<div class="attraction__item">
+										<div class="attraction-city">
+											<i class="fa-solid fa-clock"></i>
+										</div>
+										<div class="attraction-weather">2-3</div>
 									</div>
 								</div>
-								<div class="attraction__item">
-									<div class="attraction-city">
-										<i class="fa-solid fa-person-hiking"></i>
+							</div>
+							<div class="attraction__cards">
+								<h2 class="attraction__text_bold">Что там есть:</h2>
+								<div class="attraction__list">
+									<div class="attraction__item">
+										<div class="attraction-city">
+											<i class="fa-solid fa-person-hiking"></i>
+										</div>
+									</div>
+									<div class="attraction__item">
+										<div class="attraction-city">
+											<i class="fa-solid fa-tree"></i>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="attraction__imgs">
-							<picture><source srcset="img/waterfall.webp" type="image/webp"><img src="img/waterfall.jpg" alt="рускеала" class="attraction__img"></picture>
-							<div class="arrow left">
-								<i class="fa-solid fa-arrow-right fa-2xl" style="color: #ffffff;"></i>
+
+						<div class="swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="attraction__imgs">
+										<picture><source srcset="img/waterfall.webp" type="image/webp"><img src="img/waterfall.jpg" alt="рускеала-фото1" class="attraction__img"></picture>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="attraction__imgs">
+										<picture><source srcset="img/ruskeala-2.webp" type="image/webp"><img src="img/ruskeala-2.webp" alt="рускеала-фото2" class="attraction__img"></picture>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="attraction__imgs">
+										<picture><source srcset="img/ruskeala-3.webp" type="image/webp"><img src="img/ruskeala-3.jpg" alt="рускеала-фото3" class="attraction__img"></picture>
+									</div>
+								</div>
 							</div>
-							<div class="arrow right">
-								<i class="fa-solid fa-arrow-right fa-2xl" style="color: #ffffff;"></i>
-							</div>
+							<div class="swiper-pagination"></div>
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
 						</div>
+
 					</div>
 				</div>
 			</section>
@@ -320,7 +447,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js"></script>
+	<script src="js/app2.min.js"></script>
 	<!-- <script async src="https://maps.googleapis.com/maps/api/js?key=API_KEY&callback=initMap"></script> -->
 </body>
 

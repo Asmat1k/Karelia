@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab|PT+Sans+Caption&subset=latin,cyrillic);
+
 [class*=__container] {
   max-width: 73.125rem;
   -webkit-box-sizing: content-box;
@@ -100,6 +102,7 @@ html {
   width: 100%;
   min-height: 100%;
   overflow: hidden;
+  font-family: "Roboto Slab", serif;
   /*
   display: flex;
   flex-direction: column;
@@ -282,7 +285,7 @@ html {
           justify-content: space-between;
 }
 
-.no-webp .header .header-container .header-body .header-body__logo {
+.no-webp .header .header-container .header-body .header-body__logo{
   background: url("../img/flag.png") no-repeat center; }
 
 .header .header-container .header-body .header-body__logo {
@@ -333,6 +336,7 @@ html {
   margin-right: 35px;
   font-size: 15px;
   line-height: 160%;
+  font-weight: 600;
 }
 
 .header .header-container .header-body .header__menu .header-nav .header-nav__list .header-nav__item .header-nav__link {
@@ -344,18 +348,6 @@ html {
 .header .header-container .header-body .header__menu .header-nav .header-nav__list .header-nav__item .header-nav__link:hover {
   -webkit-transition: 0.3s;
   transition: 0.3s;
-}
-
-.header .header-container .header-body .header__menu .header-nav .header-nav__list .header-nav__item:first-child {
-  color: red;
-}
-
-.header .header-container .header-body .header__menu .header-nav .header-nav__list .header-nav__item:nth-of-type(2) {
-  color: blue;
-}
-
-.header .header-container .header-body .header__menu .header-nav .header-nav__list .header-nav__item:nth-of-type(3) {
-  color: green;
 }
 
 .header .header-container .header-body .header__menu .header-nav .header-nav__list .header-nav__item:last-child {
@@ -835,7 +827,7 @@ html {
   margin: 0 auto;
   padding: 20px;
   border: 1px solid rgb(214, 214, 214);
-  border-radius: 100px;
+  border-radius: 40px;
   -webkit-box-shadow: 4px 4px 38px 0px rgba(34, 60, 80, 0.2);
           box-shadow: 4px 4px 38px 0px rgba(34, 60, 80, 0.2);
   display: -webkit-box;
@@ -857,55 +849,79 @@ html {
   -webkit-box-align: left;
       -ms-flex-align: left;
           align-items: left;
-  gap: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 15px;
   max-width: 350px;
-  padding: 20px;
+  padding: 10px 20px;
 }
 
 .attraction .attraction-wrapper .attraction__body .attraction__info .attraction__title {
-  font-family: "Georgia";
-  font-size: 20px;
+  font-size: 24px;
+  font-weight: 600;
   line-height: 130%;
   letter-spacing: 0.06em;
 }
 
 .attraction .attraction-wrapper .attraction__body .attraction__info .attraction__text {
   font-family: "Arial";
+  font-size: 14px;
   max-width: 100%;
   line-height: 160%;
   color: #4C4C4C;
 }
 
-.attraction .attraction-wrapper .attraction__body .attraction__info .attraction__list {
+.attraction .attraction-wrapper .attraction__body .attraction__info .attraction__text .attraction__text_bold {
+  font-weight: 700;
+}
+
+.attraction .attraction-wrapper .attraction__body .attraction__info .attraction__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+
+.attraction .attraction-wrapper .attraction__body .attraction__info .attraction__cards .attraction__text_bold {
+  font-weight: 600;
+}
+
+.attraction .attraction-wrapper .attraction__body .attraction__info .attraction__cards .attraction__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 10px;
+  gap: 8px;
 }
 
-.attraction .attraction-wrapper .attraction__body .attraction__info .attraction__list .attraction__item {
+.attraction .attraction-wrapper .attraction__body .attraction__info .attraction__cards .attraction__list .attraction__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 10px;
+  gap: 5px;
+  font-size: 13px;
   border: 1px solid gray;
   border-radius: 100px;
-  padding: 10px 15px;
+  padding: 5px 10px;
 }
 
-.attraction .attraction-wrapper .attraction__body .attraction__info .attraction__list .attraction__item .attraction-city {
+.attraction .attraction-wrapper .attraction__body .attraction__info .attraction__cards .attraction__list .attraction__item .attraction-city {
   font-family: "Georgia";
   font-size: 1.5vw;
   line-height: 130%;
   letter-spacing: 0.06em;
 }
 
-.attraction .attraction-wrapper .attraction__body .attraction__info .attraction__list .attraction__item .attraction-weather {
+.attraction .attraction-wrapper .attraction__body .attraction__info .attraction__cards .attraction__list .attraction__item .attraction-weather {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -921,16 +937,47 @@ html {
   color: #4C4C4C;
 }
 
-.attraction .attraction-wrapper .attraction__body .attraction__imgs {
-  position: relative;
+.attraction .attraction-wrapper .attraction__body .swiper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   max-width: 700px;
-  overflow: hidden;
-  border-radius: 100px;
+  margin: 0;
 }
 
-.attraction .attraction-wrapper .attraction__body .attraction__imgs .attraction__img {
+.attraction .attraction-wrapper .attraction__body .swiper .swiper-wrapper .swiper-slide .attraction__imgs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 700px;
+  overflow: hidden;
+  border-radius: 50px;
+}
+
+.attraction .attraction-wrapper .attraction__body .swiper .swiper-wrapper .swiper-slide .attraction__imgs .attraction__img {
   max-width: 100%;
-  border-radius: 100px;
+  border-radius: 40px;
+}
+
+.attraction .attraction-wrapper .attraction__body .swiper .swiper-pagination-bullet {
+  background-color: white;
+}
+
+.attraction .attraction-wrapper .attraction__body .swiper .swiper-button-next,
+.attraction .attraction-wrapper .attraction__body .swiper .swiper-button-prev {
+  color: white;
 }
 
 [class*=-ibg] {
@@ -1119,6 +1166,32 @@ html {
     font-size: 15px;
   }
 
+  .attraction .attraction-wrapper .attraction__body .attraction__info .attraction__cards {
+    gap: 5px;
+  }
+
+  .attraction .attraction-wrapper .attraction__body .attraction__info .attraction__cards .attraction__text_bold {
+    font-size: 11px;
+  }
+
+  .attraction .attraction-wrapper .attraction__body .attraction__info .attraction__cards .attraction__list .attraction__item .attraction-city {
+    padding: 5px;
+  }
+
+  .attraction .attraction-wrapper .attraction__body .attraction__info .attraction__cards .attraction__list .attraction__item .attraction-city i {
+    -webkit-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+
+  .attraction .attraction-wrapper .attraction__body .swiper {
+    max-width: 40%;
+  }
+
+  .attraction .attraction-wrapper .attraction__body .swiper .swiper-wrapper .swiper-slide .attraction__imgs .attraction__img {
+    max-width: 500px;
+  }
+
   .attraction .attraction-wrapper .attraction__body .attraction__imgs {
     max-width: 40%;
   }
@@ -1187,6 +1260,14 @@ html {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+
+  .attraction .attraction-wrapper .attraction__body .swiper {
+    max-width: 100%;
+  }
+
+  .attraction .attraction-wrapper .attraction__body .swiper .swiper-wrapper .swiper-slide .attraction__imgs .attraction__img {
+    max-width: 100%;
   }
 
   .attraction .attraction-wrapper .attraction__body .attraction__info {
@@ -1345,26 +1426,38 @@ html {
   .attraction .attraction-wrapper .attraction__body .attraction__info {
     max-width: 100%;
     gap: 10px;
+    padding-bottom: 0;
+    margin-bottom: 20px;
   }
 
   .attraction .attraction-wrapper .attraction__body .attraction__info .attraction__title {
-    font-size: 18px;
+    font-size: 13px;
   }
 
   .attraction .attraction-wrapper .attraction__body .attraction__info .attraction__text {
-    font-size: 12px;
+    font-size: 11px;
   }
 
-  .attraction .attraction-wrapper .attraction__body .attraction__info .attraction__list .attraction__item {
+  .attraction .attraction-wrapper .attraction__body .attraction__info .attraction__cards {
     gap: 5px;
   }
 
-  .attraction .attraction-wrapper .attraction__body .attraction__imgs {
-    max-width: 100%;
+  .attraction .attraction-wrapper .attraction__body .attraction__info .attraction__cards .attraction__text_bold {
+    font-size: 11px;
   }
 
-  .attraction .attraction-wrapper .attraction__body .attraction__imgs .attraction__img {
-    max-width: 100%;
+  .attraction .attraction-wrapper .attraction__body .attraction__info .attraction__cards .attraction__list .attraction__item {
+    min-height: 33px;
+  }
+
+  .attraction .attraction-wrapper .attraction__body .attraction__info .attraction__cards .attraction__list .attraction__item .attraction-city {
+    padding: 5px;
+  }
+
+  .attraction .attraction-wrapper .attraction__body .attraction__info .attraction__cards .attraction__list .attraction__item .attraction-city i {
+    -webkit-transform: scale(2.5);
+        -ms-transform: scale(2.5);
+            transform: scale(2.5);
   }
 }
 
@@ -1556,4 +1649,4 @@ html {
   }
 }
 
-.webp .header .header-container .header-body .header-body__logo { background: url(../img/flag.webp) no-repeat center; }
+.webp .header .header-container .header-body .header-body__logo{ background: url(../img/flag.webp) no-repeat center; }
