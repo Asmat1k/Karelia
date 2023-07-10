@@ -9,7 +9,7 @@ import { Visible, initVisible } from './functions/scroll.js';
 myFunctions.isWebp();
 
 // Модуль для работы с меню-бургер
-// menuFunctions.menuInit();
+menuFunctions.menuInit();
 
 initSwiper();
 initVisible('.header');

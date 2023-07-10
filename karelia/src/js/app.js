@@ -8,7 +8,7 @@ myFunctions.isWebp();
 
 console.log('one');
 // Модуль для работы с меню-бургер
-// menuFunctions.menuInit();
+menuFunctions.menuInit();
 
 initVisible('.welcome-wrapper');
 Visible(document.querySelector('.welcome-wrapper'));

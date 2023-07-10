@@ -6,6 +6,6 @@ import * as menuFunctions from './files/burger.js';
 myFunctions.isWebp();
 
 // Модуль для работы с меню-бургер
-// menuFunctions.menuInit();
+menuFunctions.menuInit();
 
 
