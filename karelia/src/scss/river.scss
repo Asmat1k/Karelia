@@ -100,8 +100,12 @@
                 align-items: center;
                 justify-content: center;
                 .img-wrapper {
-                    border-radius: 90px;
+                    border-radius: 40px;
                     max-width: 90%;
+                    .river__info {
+                        bottom: 25px;
+                        left: 25px;
+                    }
                 }
             }
             .river__info {
@@ -131,7 +135,7 @@
                 align-items: center;
                 justify-content: center;
                 .img-wrapper {
-                    border-radius: 90px;
+                    border-radius: 40px;
                     max-width: 90%;
                 }
             }
@@ -161,7 +165,7 @@
                 align-items: center;
                 justify-content: center;
                 .img-wrapper {
-                    border-radius: 60px;
+                    // border-radius: 60px;
                     max-width: 90%;
                     .river__info {
                         left: 30px;

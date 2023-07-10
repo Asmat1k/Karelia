@@ -12,13 +12,11 @@
 							color: black;
 							max-width: 100%;
 							max-height: 60px;
-							background: url('../img/flag.png') no-repeat center;
-							background-size: cover;
-							object-fit: cover;
 							.header-body__title {
 									display: block;
 
 									background-color: white;
+									color: black;
 									mix-blend-mode: lighten;
 									font-family: 'Georgia';
 									font-size: 32px;
@@ -170,6 +168,7 @@
 									transition: .3s;
 									.header-nav {
 											.header-nav__list {
+													
 												  height: 100vh;
 													display: flex;
 													flex-direction: column;
@@ -183,21 +182,22 @@
 															font-size: 25px;
 															line-height: 100%;
 															transition: .5s;
+															color: rgb(28, 28, 28);
 															&:hover {
 																transform: scale(0.9);
 															}
 															&:active {
 																color: black
 															}
-															&:first-child {
-																color: red;
-															}
-															&:nth-child(2) {
-																color: blue;
-															}
-															&:last-child {
-																color: green;
-															}
+															// &:first-child {
+															// 	color: red;
+															// }
+															// &:nth-child(2) {
+															// 	color: blue;
+															// }
+															// &:last-child {
+															// 	color: green;
+															// }
 													}
 											}               
 									}
@@ -207,6 +207,7 @@
 									display: block;
 									color: #F1CDB3;
 							}
+							
 					}
 			}
 	}   

@@ -14,7 +14,7 @@
         }));
     }
     let bodyLockStatus = true;
-    const functions_bodyUnlock = (delay = 300) => {
+    const bodyUnlock = (delay = 300) => {
         const body = document.querySelector("body");
         if (bodyLockStatus) {
             const lockPadding = document.querySelectorAll("[data-lp]");
@@ -49,7 +49,7 @@
         }
     };
     const bodyLockToggle = (delay = 300) => {
-        if (document.documentElement.classList.contains("lock")) functions_bodyUnlock(delay); else functions_bodyLock(delay);
+        if (document.documentElement.classList.contains("lock")) bodyUnlock(delay); else functions_bodyLock(delay);
     };
     function menuInit() {
         if (document.querySelector(".menu__icon")) document.addEventListener("click", (event => {
@@ -58,8 +58,23 @@
                 document.documentElement.classList.toggle("active");
                 document.querySelector(".menu__icon").classList.toggle("active");
                 document.querySelector(".header__menu").classList.toggle("active");
+            } else if (event.target.classList.contains("header-nav__list")) {
+                bodyLockToggle();
+                document.documentElement.classList.add("active");
+                document.querySelector(".menu__icon").classList.add("active");
+                document.querySelector(".header__menu").classList.add("active");
+            } else {
+                menuClose();
+                document.documentElement.classList.remove("active");
+                document.querySelector(".menu__icon").classList.remove("active");
+                document.querySelector(".header__menu").classList.remove("active");
             }
         }));
+    }
+    function menuClose() {
+        bodyUnlock();
+        document.documentElement.classList.remove("active");
+        document.querySelector(".header__menu").classList.remove("active");
     }
     isWebp();
     menuInit();

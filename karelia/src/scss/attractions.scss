@@ -1,6 +1,9 @@
 .attraction {
   width: 100%;
   padding: 0 10px;
+  &:first-child {
+    margin-top: 40px;
+  }
   .attraction-wrapper {
     width: 100%;
     margin-bottom: 40px;
@@ -88,6 +91,8 @@
         margin: 0;
         .swiper-wrapper {
           .swiper-slide {
+            border-radius: 40px;
+            overflow: hidden;
             .attraction__imgs {
               display: flex;
               align-items: center;
@@ -204,7 +209,7 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 480px) {
   .attraction {
     .attraction-wrapper {
       margin-bottom: 20px;

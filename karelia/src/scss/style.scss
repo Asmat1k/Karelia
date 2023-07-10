@@ -130,6 +130,12 @@ body {
   margin: 50px 0 0 0;
 }
 
+@media (max-width: 768px) {
+  .page {
+    margin: 00px 0 0 0;
+  }
+}
+
 //<ПОДЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>
 @import "welcome";
 @import "header"; 

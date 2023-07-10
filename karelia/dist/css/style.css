@@ -287,22 +287,17 @@ html {
           justify-content: space-between;
 }
 
-.no-webp .header .header-container .header-body .header-body__logo{
-  background: url("../img/flag.png") no-repeat center; }
-
 .header .header-container .header-body .header-body__logo {
   cursor: pointer;
   color: black;
   max-width: 100%;
   max-height: 60px;
-  background-size: cover;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .header .header-container .header-body .header-body__logo .header-body__title {
   display: block;
   background-color: white;
+  color: black;
   mix-blend-mode: lighten;
   font-family: "Georgia";
   font-size: 32px;
@@ -846,6 +841,10 @@ html {
   padding: 0 10px;
 }
 
+.attraction:first-child {
+  margin-top: 40px;
+}
+
 .attraction .attraction-wrapper {
   width: 100%;
   margin-bottom: 40px;
@@ -980,6 +979,11 @@ html {
   margin: 0;
 }
 
+.attraction .attraction-wrapper .attraction__body .swiper .swiper-wrapper .swiper-slide {
+  border-radius: 40px;
+  overflow: hidden;
+}
+
 .attraction .attraction-wrapper .attraction__body .swiper .swiper-wrapper .swiper-slide .attraction__imgs {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1011,6 +1015,7 @@ html {
 
 .map {
   width: 100%;
+  margin-top: 40px;
 }
 
 .map .map-wrapper .map__body {
@@ -1199,7 +1204,12 @@ html {
   }
 
   .forest-wrapper .forest .forest__column .img-wrapper {
-    border-radius: 90px;
+    border-radius: 40px;
+  }
+
+  .forest-wrapper .forest .forest__column .img-wrapper .forest__info {
+    bottom: 25px;
+    left: 25px;
   }
 
   .forest-wrapper .forest .forest__info {
@@ -1244,6 +1254,10 @@ html {
 }
 
 @media (max-width: 768px) {
+  .page {
+    margin: 0px 0 0 0;
+  }
+
   .header .header-container {
     max-width: 706px;
     padding-left: 0;
@@ -1274,8 +1288,13 @@ html {
   }
 
   .about-wrapper .about .about__column .img-wrapper {
-    border-radius: 90px;
+    border-radius: 40px;
     max-width: 90%;
+  }
+
+  .about-wrapper .about .about__column .img-wrapper .about__info {
+    bottom: 25px;
+    left: 25px;
   }
 
   .about-wrapper .about .about__info {
@@ -1316,8 +1335,13 @@ html {
   }
 
   .river-wrapper .river .river__column .img-wrapper {
-    border-radius: 90px;
+    border-radius: 40px;
     max-width: 90%;
+  }
+
+  .river-wrapper .river .river__column .img-wrapper .river__info {
+    bottom: 25px;
+    left: 25px;
   }
 
   .river-wrapper .river .river__info {
@@ -1414,6 +1438,7 @@ html {
     line-height: 100%;
     -webkit-transition: 0.5s;
     transition: 0.5s;
+    color: rgb(28, 28, 28);
   }
 
   .header .header-container .header-body .header__menu .header-nav .header-nav__list .header-nav__item:hover {
@@ -1424,18 +1449,6 @@ html {
 
   .header .header-container .header-body .header__menu .header-nav .header-nav__list .header-nav__item:active {
     color: black;
-  }
-
-  .header .header-container .header-body .header__menu .header-nav .header-nav__list .header-nav__item:first-child {
-    color: red;
-  }
-
-  .header .header-container .header-body .header__menu .header-nav .header-nav__list .header-nav__item:nth-child(2) {
-    color: blue;
-  }
-
-  .header .header-container .header-body .header__menu .header-nav .header-nav__list .header-nav__item:last-child {
-    color: green;
   }
 
   .header .header-container .header-body .menu__icon {
@@ -1482,146 +1495,7 @@ html {
   }
 }
 
-@media (max-width: 460px) {
-  .about-wrapper .about {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-    gap: 20px;
-  }
-
-  .about-wrapper .about .about__column {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-
-  .about-wrapper .about .about__column .img-wrapper {
-    border-radius: 90px;
-    max-width: 90%;
-  }
-
-  .about-wrapper .about .about__column .about__info .about__title {
-    font-size: 25px;
-  }
-
-  .about-wrapper .about .about__info {
-    min-width: 90%;
-    row-gap: 20px;
-  }
-
-  .about-wrapper .about .about__info .about__title {
-    font-size: 25px;
-  }
-
-  .about-wrapper .about .about__info .about__text {
-    gap: 10px;
-    font-size: 15px;
-  }
-
-  .river-wrapper .river {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-    gap: 20px;
-  }
-
-  .river-wrapper .river .river__column {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-
-  .river-wrapper .river .river__column .img-wrapper {
-    border-radius: 90px;
-    max-width: 90%;
-  }
-
-  .river-wrapper .river .river__info {
-    min-width: 90%;
-    row-gap: 20px;
-  }
-
-  .river-wrapper .river .river__info .river__title {
-    font-size: 25px;
-  }
-
-  .river-wrapper .river .river__info .river__text {
-    gap: 10px;
-    font-size: 15px;
-  }
-
-  .forest-wrapper .forest {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-    gap: 20px;
-  }
-
-  .forest-wrapper .forest .forest__column {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-
-  .forest-wrapper .forest .forest__column .img-wrapper {
-    border-radius: 90px;
-    max-width: 90%;
-  }
-
-  .forest-wrapper .forest .forest__info {
-    min-width: 90%;
-    row-gap: 20px;
-  }
-
-  .forest-wrapper .forest .forest__info .forest__title {
-    font-size: 25px;
-  }
-
-  .forest-wrapper .forest .forest__info .forest__text {
-    gap: 10px;
-    font-size: 15px;
-  }
-}
-
-@media (max-width: 440px) {
-  .footer .footer__container .footer__body .footer__info .footer__link {
-    font-size: 13px;
-    font-weight: 400;
-  }
-}
-
-@media (max-width: 400px) {
+@media (max-width: 480px) {
   .attraction .attraction-wrapper {
     margin-bottom: 20px;
   }
@@ -1669,7 +1543,148 @@ html {
         -ms-transform: scale(2.5);
             transform: scale(2.5);
   }
+}
 
+@media (max-width: 460px) {
+  .about-wrapper .about {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    gap: 20px;
+  }
+
+  .about-wrapper .about .about__column {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .about-wrapper .about .about__column .img-wrapper {
+    border-radius: 40px;
+    max-width: 90%;
+  }
+
+  .about-wrapper .about .about__column .about__info .about__title {
+    font-size: 25px;
+  }
+
+  .about-wrapper .about .about__info {
+    min-width: 90%;
+    row-gap: 20px;
+  }
+
+  .about-wrapper .about .about__info .about__title {
+    font-size: 25px;
+  }
+
+  .about-wrapper .about .about__info .about__text {
+    gap: 10px;
+    font-size: 15px;
+  }
+
+  .river-wrapper .river {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    gap: 20px;
+  }
+
+  .river-wrapper .river .river__column {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .river-wrapper .river .river__column .img-wrapper {
+    border-radius: 40px;
+    max-width: 90%;
+  }
+
+  .river-wrapper .river .river__info {
+    min-width: 90%;
+    row-gap: 20px;
+  }
+
+  .river-wrapper .river .river__info .river__title {
+    font-size: 25px;
+  }
+
+  .river-wrapper .river .river__info .river__text {
+    gap: 10px;
+    font-size: 15px;
+  }
+
+  .forest-wrapper .forest {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    gap: 20px;
+  }
+
+  .forest-wrapper .forest .forest__column {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .forest-wrapper .forest .forest__column .img-wrapper {
+    border-radius: 40px;
+    max-width: 90%;
+  }
+
+  .forest-wrapper .forest .forest__info {
+    min-width: 90%;
+    row-gap: 20px;
+  }
+
+  .forest-wrapper .forest .forest__info .forest__title {
+    font-size: 25px;
+  }
+
+  .forest-wrapper .forest .forest__info .forest__text {
+    gap: 10px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 440px) {
+  .footer .footer__container .footer__body .footer__info .footer__link {
+    font-size: 13px;
+    font-weight: 400;
+  }
+}
+
+@media (max-width: 400px) {
   .button-wrapper {
     bottom: -10px;
     right: 2%;
@@ -1703,7 +1718,6 @@ html {
   }
 
   .about-wrapper .about .about__column .img-wrapper {
-    border-radius: 60px;
     max-width: 90%;
   }
 
@@ -1714,7 +1728,11 @@ html {
 
   .about-wrapper .about .about__column .img-wrapper .about__info .about__title {
     text-align: left;
-    font-size: 25px;
+    font-size: 20px;
+  }
+
+  .about-wrapper .about .about__column .img-wrapper .about__info .about__subtitle {
+    font-size: 10px;
   }
 
   .about-wrapper .about .about__info {
@@ -1756,7 +1774,6 @@ html {
   }
 
   .river-wrapper .river .river__column .img-wrapper {
-    border-radius: 60px;
     max-width: 90%;
   }
 
@@ -1809,7 +1826,6 @@ html {
   }
 
   .forest-wrapper .forest .forest__column .img-wrapper {
-    border-radius: 60px;
     max-width: 90%;
   }
 
@@ -1820,7 +1836,7 @@ html {
 
   .forest-wrapper .forest .forest__column .img-wrapper .forest__info .forest__title {
     text-align: left;
-    font-size: 20px;
+    font-size: 15px;
   }
 
   .forest-wrapper .forest .forest__info {
@@ -1872,5 +1888,3 @@ html {
     font-size: 25px;
   }
 }
-
-.webp .header .header-container .header-body .header-body__logo{ background: url(../img/flag.webp) no-repeat center; }
