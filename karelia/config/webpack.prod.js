@@ -51,6 +51,7 @@ const config = {
   entry: {
     'app': `${paths.src}/js/app.js`,
     'app2': `${paths.src}/js/app2.js`,
+    'app3': `${paths.src}/js/app3.js`,
   },
   output: {
     path: `${paths.build}`,

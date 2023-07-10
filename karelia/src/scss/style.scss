@@ -125,6 +125,8 @@ body {
   align-items: center;
   justify-content: center;
 
+  position: relative;
+
   margin: 50px 0 0 0;
 }
 
@@ -139,7 +141,10 @@ body {
 
 // Вторая страница
 @import "attractions";
+// Третья страница
 @import "map";
+// Кнопка наверх
+@import "up";
 //</ПОДЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>
 
 //<ПОДКЛЮЧЕНИЕ ФАЙЛОВ UI СТИЛЕЙ, ФОРМ И ГОТОВЫХ КЛАССОВ>
