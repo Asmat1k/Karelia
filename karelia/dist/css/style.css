@@ -208,6 +208,7 @@ html {
   left: 50%;
   bottom: 70px;
   max-width: 30px;
+  height: 40px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   -webkit-transform: rotate(90deg);
