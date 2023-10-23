@@ -1,0 +1,256 @@
+.attraction {
+  width: 100%;
+  padding: 0 10px;
+  &:first-child {
+    margin-top: 40px;
+  }
+  .attraction-wrapper {
+    width: 100%;
+    margin-bottom: 40px;
+    .attraction__body {
+      max-width: 1200px;
+      margin: 0 auto;
+
+      padding: 20px;
+      border: 1px solid rgb(214, 214, 214);
+      border-radius: 40px;
+      box-shadow: 4px 4px 38px 0px rgba(34, 60, 80, 0.2);
+
+      display: flex;
+      justify-content: space-between;
+
+      .attraction__info {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: center;
+        gap: 15px;
+        max-width: 350px;
+        padding: 10px 20px;
+        .attraction__title {
+          font-size: 24px;
+          font-weight: 600;
+          line-height: 130%;
+          letter-spacing: 0.06em;
+        }
+        .attraction__text {
+          font-family: "Arial";
+          font-size: 14px;
+          max-width: 100%;
+          line-height: 160%;
+          color: #4C4C4C;
+          .attraction__text_bold {
+            font-weight: 700;
+          }
+        }
+        .attraction__cards {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          .attraction__text_bold {
+            font-weight: 600;
+          }
+          .attraction__list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            .attraction__item {
+              display: flex;
+              align-items: center;
+              gap: 5px;
+  
+              font-size: 13px;
+              border: 1px solid gray;
+              border-radius: 100px;
+              padding: 5px 10px;
+              
+              .attraction-city {
+                font-family: "Georgia";
+                font-size: 1.5vw;
+                line-height: 130%;
+                letter-spacing: 0.06em;
+              }
+              .attraction-weather {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family: "Arial";
+                max-width: 100%;
+                line-height: 160%;
+                color: #4C4C4C;
+              }
+            }
+          }
+        }
+      }
+      .swiper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 700px;
+        margin: 0;
+        .swiper-wrapper {
+          .swiper-slide {
+            border-radius: 40px;
+            overflow: hidden;
+            .attraction__imgs {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              max-width: 700px;
+              overflow: hidden;
+              border-radius: 0px;
+              .attraction__img {
+                max-width: 100%;
+                border-radius: 40px;
+              }
+            }
+          }
+        }
+        .swiper-pagination-bullet {
+          background-color: white;
+        }
+        .swiper-button-next, .swiper-button-prev {
+          color: white;
+        }
+      }
+      // временно
+      // .attraction__imgs {
+      //   display: flex;
+      //   align-items: center;
+      //   justify-content: center;
+      //   max-width: 700px;
+      //   overflow: hidden;
+      //   border-radius: 100px;
+      //   .attraction__img {
+      //     max-width: 100%;
+      //     border-radius: 40px;
+      //   }
+      // }
+    }
+  }
+}
+
+
+@media (max-width: 768px) {
+  .attraction {
+    .attraction-wrapper {
+      .attraction__body {
+        .attraction__info {
+          .attraction__cards {
+            gap: 5px;
+            .attraction__text_bold {
+              font-size: 11px;
+            }
+            .attraction__list {
+              .attraction__item {
+                .attraction-city {
+                  padding: 5px;
+                  i {
+                    transform: scale(1.5);
+                  }
+                }
+              }
+            }
+          }
+        }
+        .swiper {
+          max-width: 40%;
+          .swiper-wrapper {
+            .swiper-slide {
+              .attraction__imgs {
+                .attraction__img {
+                  max-width: 500px;
+                }
+              }
+            }
+          }
+        }
+        // временно
+        .attraction__imgs {
+          max-width: 40%;
+          .attraction__img {
+            max-width: 500px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .attraction {
+    .attraction-wrapper {
+      .attraction__body {
+        flex-direction: column;
+        .swiper {
+          max-width: 100%;
+          .swiper-wrapper {
+            .swiper-slide {
+              .attraction__imgs {
+                .attraction__img {
+                  max-width: 100%;
+                }
+              }
+            }
+          }
+        }
+        .attraction__info {
+          max-width: 100%;
+        }
+        .attraction__imgs {
+          max-width: 100%;
+          .attraction__img {
+            max-width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .attraction {
+    .attraction-wrapper {
+      margin-bottom: 20px;
+      .attraction__body {
+        flex-direction: column;
+        .attraction__info {
+          max-width: 100%;
+          gap: 10px;
+          padding-bottom: 0;
+          margin-bottom: 20px;
+          .attraction__title {
+            font-size: 13px;
+          }
+          .attraction__text {
+            font-size: 11px;
+          }
+          .attraction__cards {
+            gap: 5px;
+            .attraction__text_bold {
+              font-size: 11px;
+            }
+            .attraction__list {
+              .attraction__item {
+                min-height: 33px;
+                .attraction-city {
+                  padding: 5px;
+                  i {
+                    transform: scale(2.5);
+                  }
+                }
+              }
+            }
+          }
+        }
+        // .attraction__imgs {
+        //   max-width: 100%;
+        //   .attraction__img {
+        //     max-width: 100%;
+        //   }
+        // }
+      }
+    }
+  }
+}

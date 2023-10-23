@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>KARELIA</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+	<link rel="stylesheet" href="css/style.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+	<script src="https://kit.fontawesome.com/429648afba.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header" id="header">
+			<div class="header-container">
+				<div class="header-body">
+					<div class="header-body__logo">
+						<a href="/index.html#header" class="header-body__title">KARELIA</a>
+						<a href="/index.html#header" class="header-body__subtitle">REPUBLIC</a>
+					</div>
+					<div class="header__menu">
+						<nav class="header-nav">
+							<ul class="header-nav__list">
+								<li class="header-nav__item"><a href="/index.html#header" class="header-nav__link header-nav__active">Карелия</a></li>
+								<li class="header-nav__item"><a href="attractions.html" class="header-nav__link">Достопримечательности</a></li>
+								<li class="header-nav__item active"><a href="map.html" class="header-nav__link">Карта</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="menu__icon">
+						<span class="menu__line"></span>
+						<span class="menu__line"></span>
+						<span class="menu__line"></span>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<div class="map">
+				<div class="map-wrapper">
+					<div class="map__body">
+						<div class="map__iframe">
+							<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A6c9467013b331a35d92d3696f1712e11a509a3f4a5164d24d54cd171abea242a&amp;source=constructor" width="800" height="400" frameborder="0"></iframe>
+						</div>
+						<div class="map__info">
+							<div class="map__title">
+								Карта Республики Карелия
+							</div>
+							<div class="map__text">
+								По своей территории <strong>180 520 км²</strong>, которая сопоставима с Грецией или Болгарией,
+								она занимает 18-е место среди российских регионов и пятое место среди республик Российской Федерации.
+								С севера на юг протяжённость составляет <strong>660 км,</strong>, а с запада на восток – <strong> 424 км</strong>. Столица – город Петрозаводск, основанный в 1703 году Петром Великим. Население региона – 614 тысяч человек.
+							</div>
+						</div>
+					</div>
+				</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__body">
+					<div class="footer__info">
+						<a href="https://gov.karelia.ru/" class="footer__link">Официальный сайт республики Карелия</a>
+					</div>
+					<div class="img-wrapper">
+						<picture><source srcset="img/flag.webp" type="image/webp"><img src="img/flag.png" alt="" class="footer__img"></picture>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js"></script>
+	<!-- <script async src="https://maps.googleapis.com/maps/api/js?key=API_KEY&callback=initMap"></script> -->
+</body>
+
+</html>

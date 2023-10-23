@@ -1,0 +1,194 @@
+.river-wrapper {
+  width: 100%;
+  .river {
+      max-width: 1200px;
+      margin: 0 auto;
+
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-evenly;
+      gap: 50px;
+
+      color: #545454;
+      .river__column {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 800px;
+        .img-wrapper { 
+          position: relative;
+          border-radius: 100px;
+          overflow: hidden;
+          .river__img {
+            width: 100%;
+            transition: 1s;
+            &:hover {
+                transform: scale(1.1);
+            }
+          }
+          .river__info {
+            display: flex;
+            flex-direction: column;
+            row-gap: 5px;
+            position: absolute;
+            z-index: 2;
+            bottom: 50px;
+            left: 50px;
+
+            color: white;
+            .river__title {
+                font-size: 20px;
+                font-weight: 700;
+
+                margin: 0;
+            }
+            .river__subtitle {
+                font-size: 13px;
+                font-weight: 700;
+            }
+          }
+        }
+      }
+      .river__info {
+          max-width: 350px;
+          .river__title {
+              max-width: 350px;
+              font-family: 'Georgia';
+              font-size: 2.5vw;
+              line-height: 130%;
+              letter-spacing: 0.06em;
+              margin-bottom: 25px;
+          }
+          .river__text {
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+
+            font-family: 'Arial';
+            max-width: 100%;
+            line-height: 160%;
+            color: #4C4C4C;
+          }
+      }
+  }
+}
+
+
+
+@media (max-width: 900px) {
+    .river-wrapper {
+        .river {
+            gap: 15px;
+            .river__info {
+            row-gap: 20px;
+                .river__text {
+                    font-size: 15px;
+                }
+           } 
+        }
+    }
+  }
+
+@media (max-width: 768px) {
+    .river-wrapper {
+        .river {
+            align-items: center;
+            flex-direction: column-reverse;
+            gap: 20px;
+            .river__column {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .img-wrapper {
+                    border-radius: 40px;
+                    max-width: 90%;
+                    .river__info {
+                        bottom: 25px;
+                        left: 25px;
+                    }
+                }
+            }
+            .river__info {
+            min-width: 90%;
+                .river__title {
+                    font-size: 25px;
+                    margin-bottom: 10px;
+                }
+                .river__text {
+                    gap: 10px;
+                    font-size: 15px;
+                }
+           } 
+        }
+    }
+}
+
+
+@media (max-width: 460px) {
+    .river-wrapper {
+        .river {
+            align-items: center;
+            flex-direction: column-reverse;
+            gap: 20px;
+            .river__column {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .img-wrapper {
+                    border-radius: 40px;
+                    max-width: 90%;
+                }
+            }
+            .river__info {
+            min-width: 90%;
+            row-gap: 20px;
+                .river__title {
+                    font-size: 25px;
+                }
+                .river__text {
+                    gap: 10px;
+                    font-size: 15px;
+                }
+           } 
+        }
+    }
+}
+
+@media (max-width: 385px) {
+    .river-wrapper {
+        .river {
+            align-items: center;
+            flex-direction: column-reverse;
+            gap: 20px;
+            .river__column {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .img-wrapper {
+                    // border-radius: 60px;
+                    max-width: 90%;
+                    .river__info {
+                        left: 30px;
+                        bottom: 30px;
+                        .river__title {
+                            text-align: left;
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+            .river__info {
+            max-width: 80%;
+            row-gap: 20px;
+                .river__title {
+                    text-align: center;
+                    font-size: 25px;
+                }
+                .river__text {
+                    gap: 10px;
+                    font-size: 13px;
+                }
+           } 
+        }
+    }
+}

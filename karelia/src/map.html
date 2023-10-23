@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html', { "title":"KARELIA" })
+
+<body>
+  <div class="wrapper">
+    @@include('html/header/header3.html',{})
+    <main class="page">
+      <div class="map">
+        <div class="map-wrapper">
+          <div class="map__body">
+            <div class="map__iframe">
+              <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A6c9467013b331a35d92d3696f1712e11a509a3f4a5164d24d54cd171abea242a&amp;source=constructor" width="800" height="400" frameborder="0"></iframe>
+            </div>
+            <div class="map__info">
+              <div class="map__title">
+                Карта Республики Карелия
+              </div> 
+              <div class="map__text">
+                По своей территории <strong>180 520 км²</strong>, которая сопоставима с Грецией или Болгарией, 
+                она занимает 18-е место среди российских регионов и пятое место среди республик Российской Федерации.
+                С севера на юг протяжённость составляет <strong>660 км,</strong>, а с запада на восток – <strong> 424 км</strong>. Столица – город Петрозаводск, основанный в 1703 году Петром Великим. Население региона – 614 тысяч человек.
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    @@include('html/footer.html',{})
+  </div>
+  @@include('html/js.html',{})
+</body>
+
+</html>

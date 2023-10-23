@@ -1,0 +1,69 @@
+.map {
+  width: 100%;
+  margin-top: 40px;
+  .map-wrapper {
+    .map__body {
+      display: flex;
+      align-items: left;
+      justify-content: space-between;
+
+      max-width: 1200px;
+      gap: 20px;  
+      margin: 0 auto;
+      .map__iframe {
+        border-radius: 60px;
+        overflow: hidden;
+        max-width: 65%;
+        iframe {
+          max-width: 100%;
+        }
+      }
+      .map__info {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        max-width: 30%;
+        .map__title {
+          font-size: 20px;
+          font-weight: 600;
+          letter-spacing: 3px;
+        }
+        .map__text {
+          font-family: Arial;
+          font-size: 14px;
+          line-height: 160%;
+          color: #4C4C4C;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .map {
+    padding: 0 20px;
+    .map-wrapper {
+      .map__body {
+        flex-direction: column;
+
+        .map__iframe {
+          max-width: 100%;
+          iframe {
+
+          }
+        }
+        .map__info {
+          max-width: 100%;
+          .map__title {
+            text-align: center;
+            // font-size: 15px;
+          }
+          .map__text {
+            // font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+  
+}
